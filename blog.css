@@ -2,7 +2,6 @@ body, article {
 	width: 500px;
 	margin: auto;
 	text-align: center;
-	background-color:blue;
 }
 
 p {
@@ -43,17 +42,9 @@ header {
 }
 
 header:hover {
-	background-color: white;
+	background-color:white;
 }
 
-footer a:link {
-  color: #FFFFFF;
-}
-
-footer a:visited {
-` color: #CCCCCC;
-}
-
-footer a:hover {
-  color: #999999;
+div:hover {
+	background-color: #00FF00;
 }
