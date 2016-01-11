@@ -1,0 +1,45 @@
+html { 
+	background-color: black;
+	color:white;
+}
+
+header {
+	background-color: #91ea02;
+	color: black;	
+	width: 100%;
+	text-align: center;
+	max-height: 100px;
+}
+
+article {
+	background-color: white;
+	color:black;
+	max-height: 1000px;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+.moviepicture {
+	float: left;
+	margin: 30px;
+
+}
+
+.movietext {
+	content width: 440px;
+	height: 600px;
+	padding: 10px;
+}
+
+.moviestat {
+	margin:auto;
+
+}
+
+footer {
+	background-color: #91ea02;
+	color: black;	
+	width: 100%;
+	text-align: center;
+	max-height: 100px;
+}

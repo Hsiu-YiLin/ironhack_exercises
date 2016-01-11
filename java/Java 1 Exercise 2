@@ -1,0 +1,15 @@
+//Java 1 Exercise 2
+var names, string="";
+
+names = [ "Canada", "Mexico", "Turkey", "Japan" ];
+
+function prepare(names) {
+for (i = 0; i <names.length-1; i=i+1) {
+    string = string+names[i]+", ";
+    }
+    string = string+"and "+names[names.length-1];
+    return string;
+}
+
+// Should print "Canada, Mexico, Turkey and Japan"
+console.log(prepare(names));
