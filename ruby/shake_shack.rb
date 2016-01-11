@@ -26,23 +26,24 @@ class Ingredient
   end
 end
 
-# class ShakeShack
+class ShakeShack
 	
-# 	def inintialize
-# 	@milkshakes = [ ]
-# 	end
+	def initialize
+	@milkshakes = [ ]
+	end
 	
-# 	def add_milkshake(milkshake)
-# 		@milkshake.push(milkshakes)
-# 	end
+	def add_milkshake(milkshake)
+		@milkshakes.push(milkshake)
+	end
 
-# 	def total_checkout
-# 		total_price=0
-# 		total_price do |x|
-
-# 		end
-# 	end
-# end
+	def total_checkout
+		total_price=0
+		@milkshakes.each do |milkshake|
+			total_price += milkshake.price_of_milkshake 
+		end
+		 total_price
+	end
+end
 nizars_milkshake = MilkShake.new
 banana = Ingredient.new "Banana", 2
 chocolate_chips = Ingredient.new "Chocolate Chips", 1
@@ -51,8 +52,7 @@ nizars_milkshake.add_ingredient(banana)
 nizars_milkshake.add_ingredient(chocolate_chips)
 puts nizars_milkshake.price_of_milkshake
 
-# test= ShakeShack.new
-# test.add_milkshake(nizars_milkshake.class)
-#milkshakes=ShakeShack.new 
-#milkshakes.add_milkeshake(nizars_milkshake)
-#phone_order12=ShakeShack.total_checkout
+milkshakes=ShakeShack.new 
+milkshakes.add_milkshake(nizars_milkshake)
+puts "Your total is:"
+puts milkshakes.total_checkout
